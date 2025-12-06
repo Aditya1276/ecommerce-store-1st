@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Store | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">SimpleStore</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="login.html" id="auth-link">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="auth-box">
+      <h1>Login</h1>
+      <p class="small-text">Demo login – no real authentication, just stored in your browser.</p>
+
+      <form id="login-form">
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn primary" style="width:100%;">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 SimpleStore</footer>
+  <script src="app.js"></script>
+</body>
+</html>
